@@ -11,7 +11,7 @@ describe 'Processing items' do
 
   it 'should process items' do
     bit = BatchItemProcessor.new
-    bit.process_items([1, 2]) {"asd"}
+    bit.process_items([1, 2]) {}
 
     bit.items_processed.should eq([1, 2])
   end
